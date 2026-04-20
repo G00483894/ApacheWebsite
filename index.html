@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Border test</title>
+        <style>
+            body{
+                background-color: rgb(224, 232, 238);
+                font-family: Papyrus;
+            }
+            /*Borders*/
+            .one {
+                border-style: solid;
+                border-color: #6532a4;
+                border-top-width: 3px;
+                border-right-width: 5px;
+                border-bottom-width: 3px;
+                border-left-width: 5px;
+            }
+            .two {
+                border-style: solid;
+                border-color: rgb(166, 102, 154);
+                padding: 20px 30px;
+                border-width: 10px;
+                margin: 20px 30px 40px 20px;
+            }
+            /*Display mode test*/
+            div{
+                display: none;/*за замовчуванням не показується*/
+                width:2.5em;
+                height: 2.5em;
+                margin: 0.5em;
+                padding: 0.5em;
+                border: 5px solid rgb(41, 83, 53);
+            }
+            header:hover div{/*коли курсор на hover зʼявляються бокси*/
+                display: inline-block;
+                cursor: crosshair;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="one">Hello</p>
+        <p class="two">There</p>
+        <header>Hover
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </header>
+    </body>
+</html>
